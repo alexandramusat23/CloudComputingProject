@@ -1,0 +1,28 @@
+<div *ngIf="data" class="row">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+            Track Name
+          </th>
+          <th>
+            Artist
+          </th>
+          <th>
+            Lyrics
+          </th>
+          <th>
+            Language
+          </th>
+        </tr>
+      </thead>
+      <tr>
+        <td>{{data.track.name}}</td>
+        <td>{{data.artist.name}}</td>
+        <td [style.white-space]="'pre'">{{data.track.text}}</td>
+        <td>{{data.track.lang.name}}</td>
+      </tr>
+    </table>
+  </div>
+</div>

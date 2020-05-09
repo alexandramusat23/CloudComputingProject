@@ -1,0 +1,48 @@
+<div class="row">
+  <div class="col-md-12">
+    <table class="table">
+      <thead>
+        <tr>
+          <th>
+
+          </th>
+          <th>
+            Artist
+          </th>
+          <th>
+            Album
+          </th>
+          <th>
+            Track
+          </th>
+          <th>
+            Release date
+          </th>
+          <th>
+            URL
+          </th>
+          <th>
+            Lyrics
+          </th>
+          <th>
+            Add to my playlist
+          </th>
+        </tr>
+      </thead>
+      <tr *ngFor="let d of data">
+        <td><img [src]="d.artworkUrl100"></td>
+        <td>{{d.artistName}}</td>
+        <td>{{d.collectionName}}</td>
+        <td>{{d.trackName}}</td>
+        <td>{{d.releaseDate | date}}</td>
+        <td><a href="{{d.collectionArtistViewUrl}}">{{d.collectionArtistViewUrl}}</a></td>
+        <td><button class="btn btn-primary" (click)="goToLyrics(d)">Get lyrics</button></td>
+        <td>
+          <button *ngIf="!d.included" class="btn btn-primary" (click)="addToMyPlaylist(d)">Add</button>
+          <button *ngIf="d.included" class="btn btn-danger" (click)="remove(d)">Remove</button>
+        </td>
+      </tr>
+    </table>
+  </div>
+</div>
+<br />
