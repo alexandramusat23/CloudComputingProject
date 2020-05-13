@@ -10,15 +10,16 @@ Aplicatia dezvoltata de mine foloseste doua API-uri  si permite utilizatorului s
 Descriere API:
 
 Aplicatia foloseste doua API-uri: 
-API-ul Itunes (https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/ ) este unul public, care nu necesita autentificare si autorizare de servicii, acesta prin intermediul metodei HTTP GET aduce informatii precum: numele artistului, poza, numele melodiei, albumul din care face parte, data lansarii etc. Un exemplu care imi intoarce informaii despre artistul: Rihana 
+API-ul Itunes (https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/ ) este unul public, care nu necesita autentificare si autorizare de servicii, acesta prin intermediul metodei HTTP GET aduce informatii precum: numele artistului, poza, numele melodiei, albumul din care face parte, data lansarii etc. Un exemplu de request care imi intoarce informaii despre artistul: Rihana 
 
 ![](images/1.PNG)
+alt exemplu de request:GET https://itunes.apple.com/search?term=Lana del rey&enitity=album
 
 
 Cel de-al doilea API folosit in cadrul aplicatiei este https://apiseeds.com/documentation/lyrics, acesta este de asemenea un api public, insa spre deosebire de cel anterior necesita un apikey. Prin intermediul metodei HTTP GET aduce in cadrul aplicației versurile melodiei si informatii despre limba in care este cantata melodia.  Un exemplu de request pentru artistul: Rihanna si melodia: Diamonds
 
-POZA 2
-
+![](images/2.PNG)
+alt exemplu de request: https://orion.apiseeds.com/api/music/lyric/Florin Salam/Saintropez?apikey=0MLXtrN6lkMAda4xOClCNDFydB33MDSSvLzQMcP32THWcinabK83QWI53AyUhb2n
 
 Flux de date:
 
@@ -27,7 +28,22 @@ Primul flux de date este realizat atunci când aplicația face call-ul prin inte
 
 Descriere aplicatie:
 Utilizatorul caută in search object-ul din dreapta ecranului numele artistului urmand sa ii apara o lista cu melodiile si albumele acestuia:
-POZA 1 APP
+![](images/pag1.png)
+
+Mai departe are posibilitatea de adăugare in lista de preferințe. In cazul in care utilizatorul se răzgândește poate elimina melodia/artistul din lista sau poate adaugă unii noi. 
+![](images/pag2.png)
+
+De asemenea, utilizatorul poate vedea versurile unei melodii prin interactiunea cu butonul get lyrics. Exista si posibilitatea in care actiunea de get lyrics sa nu intoarca nimic in interfata deoarece status code-ul este 404, adica metoda de call pentru versuri nu gaseste niciun rezultat pentru artistul si melodia selectata. 
+![](images/pag3.png)
+
+
+
+Aplicatia a fost hostata in cloud utilizand Amazon Simple Storage Service (Amazon S3).
+![](images/aws.png)
+
+
+
+
 
 
 
