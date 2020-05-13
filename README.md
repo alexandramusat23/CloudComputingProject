@@ -12,7 +12,7 @@ Descriere API:
 Aplicatia foloseste doua API-uri: 
 API-ul Itunes (https://affiliate.itunes.apple.com/resources/documentation/itunes-store-web-service-search-api/ ) este unul public, care nu necesita autentificare si autorizare de servicii, acesta prin intermediul metodei HTTP GET aduce informatii precum: numele artistului, poza, numele melodiei, albumul din care face parte, data lansarii etc. Un exemplu care imi intoarce informaii despre artistul: Rihana 
 
-![](images/1.png)
+![](images/1.PNG)
 
 
 Cel de-al doilea API folosit in cadrul aplicatiei este https://apiseeds.com/documentation/lyrics, acesta este de asemenea un api public, insa spre deosebire de cel anterior necesita un apikey. Prin intermediul metodei HTTP GET aduce in cadrul aplicației versurile melodiei si informatii despre limba in care este cantata melodia.  Un exemplu de request pentru artistul: Rihanna si melodia: Diamonds
