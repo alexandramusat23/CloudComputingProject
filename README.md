@@ -4,7 +4,7 @@ Proiect cloud computing 2020- Alexandra Musat
 Introducere si descrierea problemei:
 
 In ziua de astăzi realizarea aplicațiilor a devenit din ce in ce mai ușoara datorita integrării acestora cu API-uri deja existente. 
-Aplicatia dezvoltata de mine foloseste doua API-uri  si permite utilizatorului sa isi creeze propriul playlist de melodii, tot ce trebuie sa faca este sa caute artistul preferat cu ajutorul obiectului de cautare, iar prin intermediul  butonului de Add/ Remove to playlist artistul impreuna cu melodia preferata sunt adaugate in lista de preferinte muzicale. De asemenea, utilizatorul are posibilitatea, prin intermediul butonului Get lyrics sa vada versurile unei melodi.
+Aplicatia dezvoltata pentru proiect foloseste doua API-uri  si permite utilizatorului sa isi creeze propriul playlist de melodii, tot ce trebuie sa faca este sa caute artistul preferat cu ajutorul obiectului de cautare, iar prin intermediul  butonului de Add/ Remove to playlist artistul impreuna cu melodia preferata sunt adaugate in lista de preferinte muzicale. De asemenea, utilizatorul are posibilitatea, prin intermediul butonului Get lyrics sa vada versurile unei melodi.
 
 
 Descriere API:
