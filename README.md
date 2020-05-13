@@ -1,5 +1,5 @@
 # CloudComputing
-Proiect cloud computing 2020- SIMPRE
+Proiect cloud computing 2020- Alexandra Musat
 
 Introducere si descrierea problemei:
 
