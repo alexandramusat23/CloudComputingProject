@@ -1,4 +1,4 @@
-# CloudComputin
+# CloudComputing
 Proiect cloud computing 2020- SIMPRE
 
 Introducere si descrierea problemei:
