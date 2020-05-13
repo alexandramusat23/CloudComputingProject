@@ -21,6 +21,7 @@ POZA 2
 
 
 Flux de date:
+
 Primul flux de date este realizat atunci când aplicația face call-ul prin intermediul URL-ului si al parametrilor către API-ul public. Cel de-al doilea flux îl reprezintă fișierul JSON ce vine ca raspuns, acesta fiind trimis de catre API.
 
 
