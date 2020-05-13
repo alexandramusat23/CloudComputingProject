@@ -4,7 +4,7 @@ Proiect cloud computing 2020- SIMPRE
 Introducere si descrierea problemei:
 
 In ziua de astăzi realizarea aplicațiilor a devenit din ce in ce mai ușoara datorita integrării acestora cu API-uri deja existente. 
-Aplicatia dezvoltata de mine foloseste doua API-uri  si permite utilizatorului sa isi creeze propriul plylist de melodii, tot ce trebuie sa faca este sa caute artistul preferat cu ajutorul obiectului de cautare, iar prin intermediul  butonului de Add/ Remove to playlist artistul impreuna cu melodia preferata sunt adaugate in lista de preferinte muzicale. De asemenea, utilizatorul are posibilitatea, prin intermediul butonului Get lyrics sa vada versurile unei melodi.
+Aplicatia dezvoltata de mine foloseste doua API-uri  si permite utilizatorului sa isi creeze propriul playlist de melodii, tot ce trebuie sa faca este sa caute artistul preferat cu ajutorul obiectului de cautare, iar prin intermediul  butonului de Add/ Remove to playlist artistul impreuna cu melodia preferata sunt adaugate in lista de preferinte muzicale. De asemenea, utilizatorul are posibilitatea, prin intermediul butonului Get lyrics sa vada versurile unei melodi.
 
 
 Descriere API:
@@ -19,7 +19,7 @@ alt exemplu de request:GET https://itunes.apple.com/search?term=Lana del rey&eni
 Cel de-al doilea API folosit in cadrul aplicatiei este https://apiseeds.com/documentation/lyrics, acesta este de asemenea un api public, insa spre deosebire de cel anterior necesita un apikey. Prin intermediul metodei HTTP GET aduce in cadrul aplicației versurile melodiei si informatii despre limba in care este cantata melodia.  Un exemplu de request pentru artistul: Rihanna si melodia: Diamonds
 
 ![](images/2.PNG)
-alt exemplu de request: https://orion.apiseeds.com/api/music/lyric/Florin Salam/Saintropez?apikey=0MLXtrN6lkMAda4xOClCNDFydB33MDSSvLzQMcP32THWcinabK83QWI53AyUhb2n
+alt exemplu de request:GET https://orion.apiseeds.com/api/music/lyric/Florin Salam/Saintropez?apikey=0MLXtrN6lkMAda4xOClCNDFydB33MDSSvLzQMcP32THWcinabK83QWI53AyUhb2n
 
 Flux de date:
 
